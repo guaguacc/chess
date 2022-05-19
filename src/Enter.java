@@ -58,7 +58,7 @@ public class Enter extends JFrame {
 
     private void addBackground(){
 
-        ImageIcon picture = new ImageIcon("./src/chessBackground.png");  //load a picture from computer
+        ImageIcon picture = new ImageIcon("./images/chessBackground.png");  //load a picture from computer
         Image image = picture.getImage();  //create an Image to change the size of the picture
         System.out.println(picture.getIconWidth()+","+picture.getIconHeight());
         ImageIcon newpicture = new ImageIcon(image.getScaledInstance(picture.getIconWidth(), picture.getIconHeight(), Image.SCALE_SMOOTH));

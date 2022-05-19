@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="unnamed" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547a871-93ae-41da-98f2-bd3c7761d591" name="变更" comment="" />
+    <list default="true" id="3547a871-93ae-41da-98f2-bd3c7761d591" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/Enter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/Enter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/chessBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Enter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessBackground.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/chessBackground.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +30,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -41,12 +53,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.last.edited" value="工件" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\12294\Desktop\ChessDemo\images" />
       <recent name="C:\Users\12294\Desktop\ChessDemo2\ChessDemo\src" />
       <recent name="C:\Users\12294\Desktop\ChessDemo2\ChessDemo\images" />
       <recent name="C:\Users\12294\Desktop\ChessDemo_1_\ChessDemo\resource" />
@@ -79,6 +92,17 @@
       <updated>1651940134835</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
