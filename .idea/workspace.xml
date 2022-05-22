@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="unnamed" />
+      <artifact name="ChessDemo:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,35 +10,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3547a871-93ae-41da-98f2-bd3c7761d591" name="变更" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/model/bishop-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/model/bishop-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/model/king-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/model/king-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/model/knight-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/model/knight-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/model/pawn-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/model/pawn-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/model/queen-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/model/queen-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/model/rook-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/model/rook-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/view/BG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/view/chessBackground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/view/chessboardBG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/view/ink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/view/inkChessboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/view/seaB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/view/seaBoard.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChessDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChessDemo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/Enter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/Enter$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/Enter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/Enter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/controller/ClickController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/controller/ClickController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/controller/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/controller/GameController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/BishopChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/BishopChessComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/ChessColor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/ChessColor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/ChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/ChessComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/EmptySlotComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/EmptySlotComponent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/KingChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/KingChessComponent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/KnightChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/KnightChessComponent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/QueenChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/QueenChessComponent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/RookChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/RookChessComponent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/blackPawnChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/blackPawnChessComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/load.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/load.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/whitePawnChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/whitePawnChessComponent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame$TimerTaskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame$TimerTaskTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/Chessboard$TimerTaskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/Chessboard$TimerTaskTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/Chessboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/Chessboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessboardPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessboardPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/resource/view/1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/girigiri.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/resource/view/girigiri.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/girigiri.wav" beforeDir="false" afterPath="$PROJECT_DIR$/resource/view/girigiri.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/录制_2022_05_17_18_47_22_193_1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/resource/view/cv1.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/录制_2022_05_17_18_47_22_193_1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/resource/view/cv1.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Enter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/BishopChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/BishopChessComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/KingChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/KingChessComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/KnightChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/KnightChessComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/QueenChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/QueenChessComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/load.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/load.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/RookChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/RookChessComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/blackPawnChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/blackPawnChessComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/whitePawnChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/whitePawnChessComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/ChessGameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ChessGameFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Chessboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Chessboard.java" afterDir="false" />
     </list>
@@ -85,18 +104,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="模块" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resource/model" />
+    <property name="project.structure.last.edited" value="工件" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\12294\Desktop\ChessDemo\resource\model" />
+      <recent name="C:\Users\12294\Desktop\ChessDemo\resource\view" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\12294\Desktop\ChessDemo\resource\view" />
+      <recent name="C:\Users\12294\Desktop\ChessDemo\resource\model" />
+      <recent name="C:\Users\12294\Desktop\ChessDemo\resource\models" />
+      <recent name="C:\Users\12294\Desktop\ChessDemo\resource" />
       <recent name="C:\Users\12294\Desktop\ChessDemo\images" />
-      <recent name="C:\Users\12294\Desktop\ChessDemo2\ChessDemo\src" />
-      <recent name="C:\Users\12294\Desktop\ChessDemo2\ChessDemo\images" />
-      <recent name="C:\Users\12294\Desktop\ChessDemo_1_\ChessDemo\resource" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="model" />
@@ -132,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652969241716</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1">
+      <created>1653188006743</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653188006743</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

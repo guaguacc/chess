@@ -33,11 +33,11 @@ public class whitePawnChessComponent extends ChessComponent {
      */
     public void loadResource() throws IOException {
         if (ROOK_WHITE == null) {
-            ROOK_WHITE = ImageIO.read(new File("./images/pawn-white.png"));
+            ROOK_WHITE = ImageIO.read(ChessComponent.class.getResourceAsStream("pawn-white.png"));
         }
 
         if (ROOK_BLACK == null) {
-            ROOK_BLACK = ImageIO.read(new File("./images/pawn-black.png"));
+            ROOK_BLACK = ImageIO.read(ChessComponent.class.getResourceAsStream("pawn-black.png"));
         }
     }
 

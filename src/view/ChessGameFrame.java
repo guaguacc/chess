@@ -2,15 +2,19 @@ package view;
 
 import controller.GameController;
 import model.ChessColor;
+import model.ChessComponent;
 
+import javax.imageio.ImageIO;
 import javax.sound.sampled.*;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
+import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Timer;
 
 /**
@@ -91,7 +95,12 @@ public class ChessGameFrame extends JFrame {
                 timeLabel.setLocation(fraHeight, fraHeight / 15 - 20);
                 timeLabel.setSize(fraWidth / 18, fraHeight / 17);
                 timeLabel.setFont(new Font("Rockwell", Font.BOLD, fraHeight / 39));
-                ImageIcon picture = new ImageIcon(pathOfChessBoardBG);
+                ImageIcon picture = null;
+                try {
+                    picture = new ImageIcon(ImageIO.read(ChessGameFrame.class.getResourceAsStream(pathOfChessBoardBG)));
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
                 Image img = picture.getImage();
                 img = img.getScaledInstance(fraHeight / 10 * 8, fraHeight / 10 * 8, Image.SCALE_DEFAULT);
                 ImageIcon newp = new ImageIcon(img);
@@ -162,7 +171,14 @@ public class ChessGameFrame extends JFrame {
 
     private void addBackground() {
 
-        ImageIcon picture = new ImageIcon(pathOfChessBoardBG);
+        ImageIcon picture = null;
+        try {
+            System.out.println("?ZBCS");
+            picture = new ImageIcon(ImageIO.read(ChessGameFrame.class.getResourceAsStream(pathOfChessBoardBG)));
+            System.out.println("lihai");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 //        load a picture from computer
 //        Image image = picture.getImage();  //create an Image to change the size of the picture
 //        System.out.println(picture.getIconWidth()+","+picture.getIconHeight());
@@ -179,7 +195,12 @@ public class ChessGameFrame extends JFrame {
 
     private void addBG() {
 
-        ImageIcon picture = new ImageIcon(PathOfBG);  //load a picture from computer
+        ImageIcon picture = null;  //load a picture from computer
+        try {
+            picture = new ImageIcon(ImageIO.read(ChessGameFrame.class.getResourceAsStream(PathOfBG)));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         Image image = picture.getImage();  //create an Image to change the size of the picture
         ImageIcon newpicture = new ImageIcon(image.getScaledInstance(picture.getIconWidth(), picture.getIconHeight(), Image.SCALE_SMOOTH));
         JLabel label = new JLabel(picture);
@@ -206,8 +227,7 @@ public class ChessGameFrame extends JFrame {
                     BGMon = false;
                 } else {
 //                System.out.println(new File(".").getAbsolutePath());
-                    File soundFile = new File("./resource/1.wav");
-                    AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+                    AudioInputStream audioIn = AudioSystem.getAudioInputStream(new BufferedInputStream(ChessGameFrame.class.getResourceAsStream("1.wav")));
                     clip = AudioSystem.getClip();
                     clip.open(audioIn);
                     clip.loop(Integer.MAX_VALUE);
@@ -340,9 +360,8 @@ public class ChessGameFrame extends JFrame {
 
     public void chessVoice() {
         try {
-            File soundFile = new File("./resource/录制_2022_05_17_18_47_22_193_1.wav");
             Clip clip;
-            AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+            AudioInputStream audioIn = AudioSystem.getAudioInputStream(new BufferedInputStream(ChessGameFrame.class.getResourceAsStream("cv1.wav")));
             clip = AudioSystem.getClip();
             clip.open(audioIn);
             clip.start();

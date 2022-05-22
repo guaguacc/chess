@@ -390,6 +390,10 @@ public class Chessboard extends JComponent {
 
     public void write() {
         try {
+            File dir = new File("./load");
+            if(!dir.exists()){
+                dir.mkdirs();
+            }
             String path = String.format("./load/load%d.txt", loadTime % 8);
             File file = new File(path);
             Writer fw = new FileWriter(path);

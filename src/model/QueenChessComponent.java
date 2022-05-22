@@ -32,11 +32,11 @@ public class QueenChessComponent extends ChessComponent {
      */
     public void loadResource() throws IOException {
         if (Queen_WHITE == null) {
-            Queen_WHITE = ImageIO.read(new File("./images/queen-white.png"));
+            Queen_WHITE = ImageIO.read(ChessComponent.class.getResourceAsStream("queen-white.png"));
         }
 
         if (Queen_BLACK == null) {
-            Queen_BLACK = ImageIO.read(new File("./images/queen-black.png"));
+            Queen_BLACK = ImageIO.read(ChessComponent.class.getResourceAsStream("queen-black.png"));
         }
     }
 

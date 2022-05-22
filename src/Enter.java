@@ -1,9 +1,11 @@
 import view.ChessGameFrame;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
+import java.io.IOException;
 
 public class Enter extends JFrame {
     private int WIDTH;//1000
@@ -67,7 +69,12 @@ public class Enter extends JFrame {
 
     private void addBackground(){
 
-        ImageIcon picture = new ImageIcon("./images/chessBackground.png");  //load a picture from computer
+        ImageIcon picture = null;  //load a picture from computer
+        try {
+            picture = new ImageIcon(ImageIO.read(Enter.class.getResourceAsStream("view/chessBackground.png")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         Image image = picture.getImage();  //create an Image to change the size of the picture
         System.out.println(picture.getIconWidth()+","+picture.getIconHeight());
         ImageIcon newpicture = new ImageIcon(image.getScaledInstance(picture.getIconWidth(), picture.getIconHeight(), Image.SCALE_SMOOTH));
@@ -77,8 +84,8 @@ public class Enter extends JFrame {
         add(label);}
 
 
-    String BGpath="./images/BG.png";
-    String PathOfChessBoardBG="./images/chessboardBG.png";
+    String BGpath="BG.png";
+    String PathOfChessBoardBG="chessboardBG.png";
     JButton buttonSea = new JButton("sea");
     private void chessSea() {
 
@@ -87,8 +94,8 @@ public class Enter extends JFrame {
         buttonSea.setFont(new Font("Rockwell", Font.BOLD, HEIGTH/39));
         add(buttonSea);
         buttonSea.addActionListener(e -> {
-            BGpath="./images/seaB.png";
-            PathOfChessBoardBG="./images/seaBoard.png";
+            BGpath="seaB.png";
+            PathOfChessBoardBG="seaBoard.png";
         });
     }
 
@@ -100,8 +107,8 @@ public class Enter extends JFrame {
         buttonInk.setFont(new Font("Rockwell", Font.BOLD, HEIGTH/39));
         add(buttonInk);
         buttonInk.addActionListener(e -> {
-            BGpath="./images/ink.png";
-            PathOfChessBoardBG="./images/inkChessboard.png";
+            BGpath="ink.png";
+            PathOfChessBoardBG="inkChessboard.png";
         });
     }
 }
