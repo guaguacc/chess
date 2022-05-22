@@ -8,6 +8,8 @@ public class Main {
         SwingUtilities.invokeLater(() -> {
 
 
+
+
            Enter enter = new Enter(1000, 760);
             enter.setVisible(true);
         });
