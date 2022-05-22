@@ -5,6 +5,7 @@ import view.Chessboard;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import model.*;
@@ -37,7 +38,7 @@ public class GameController {
 
         try {
 
-            List<String> chessData = Files.readAllLines(Path.of(path));
+            List<String> chessData = Files.readAllLines(Paths.get(path));
             chessboard.loadGame(chessData);
             return chessData;
         } catch (IOException e) {

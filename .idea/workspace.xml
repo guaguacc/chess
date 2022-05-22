@@ -9,13 +9,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547a871-93ae-41da-98f2-bd3c7761d591" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3547a871-93ae-41da-98f2-bd3c7761d591" name="变更" comment="1">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/Enter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/Enter$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/Enter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/Enter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/chessBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/controller/ClickController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/controller/ClickController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/controller/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/controller/GameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/BishopChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/BishopChessComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/ChessColor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/ChessColor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/ChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/ChessComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/EmptySlotComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/EmptySlotComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/KingChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/KingChessComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/KnightChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/KnightChessComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/QueenChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/QueenChessComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/RookChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/RookChessComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/blackPawnChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/blackPawnChessComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/load.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/load.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/whitePawnChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/whitePawnChessComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame$TimerTaskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame$TimerTaskTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/Chessboard$TimerTaskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/Chessboard$TimerTaskTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/Chessboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/Chessboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessboardPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessboardPoint.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Enter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessBackground.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/chessBackground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/KingChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/KingChessComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/QueenChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/QueenChessComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/load.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/load.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ChessGameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ChessGameFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Chessboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Chessboard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +65,14 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="07e3fff3-57b0-42ef-b2be-192e496df208" />
+        <option name="url" value="https://github.com/guaguacc/chess.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -53,9 +86,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="工件" />
+    <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -91,6 +125,14 @@
       <option name="presentableId" value="Default" />
       <updated>1651940134835</updated>
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1652969241716</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652969241716</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,18 +146,17 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/view/Chessboard.java</url>
-          <line>337</line>
+          <line>335</line>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Enter.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

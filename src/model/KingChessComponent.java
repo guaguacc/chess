@@ -80,11 +80,13 @@ public class KingChessComponent extends ChessComponent {
     @Override
     public boolean canMoveTo(ChessComponent[][] chessComponents, ChessboardPoint destination) {
         ChessboardPoint source = getChessboardPoint();
-        if(Math.abs(source.getX()-destination.getX())!=1){
-            return false;
-        }else if(Math.abs((source.getY()-destination.getY()))!=1){
-            return false;
-        }else return true;
+        if(Math.abs(source.getX()-destination.getX())==1&&Math.abs((source.getY()-destination.getY()))==0){
+            return true;
+        }else if(Math.abs(source.getX()-destination.getX())==0&&Math.abs((source.getY()-destination.getY()))==1){
+            return true;
+        }else if(Math.abs(source.getX()-destination.getX())==1&&Math.abs((source.getY()-destination.getY()))==1){
+            return true;
+        }return false;
     }
 
     /**

@@ -60,7 +60,6 @@ public class Chessboard extends JComponent {
                     chessComponents[i][j] = new KnightChessComponent(new ChessboardPoint(i, j), calculatePoint(i, j), original[i][j].getChessColor(), clickController, CHESS_SIZE);
                 } else {
                     chessComponents[i][j] = new EmptySlotComponent(new ChessboardPoint(i, j), calculatePoint(i, j), clickController, CHESS_SIZE);
-
                 }
                 chessComponents[i][j].setVisible(true);
                 chessComponents[i][j].repaint();
@@ -89,7 +88,6 @@ public class Chessboard extends JComponent {
         setSize(width, height);
         CHESS_SIZE = width / 8;
 
-        System.out.printf("chessboard size = %d, chess size = %d\n", width, CHESS_SIZE);
 
         initiateEmptyChessboard();
 
@@ -117,7 +115,7 @@ public class Chessboard extends JComponent {
         updateOrigin();
     }
 
-    public void updateOrigin(){
+    public void updateOrigin() {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
                 if (chessComponents[i][j] instanceof KingChessComponent) {
@@ -355,6 +353,7 @@ public class Chessboard extends JComponent {
 
         isUndo = false;
     }
+
     public void Undo() {
         isUndo = true;
 //        for (int i = 0; i < 8; i++) {
@@ -391,7 +390,7 @@ public class Chessboard extends JComponent {
 
     public void write() {
         try {
-            String path = String.format("./load/load%s.txt", loadTime % 8);
+            String path = String.format("./load/load%d.txt", loadTime % 8);
             File file = new File(path);
             Writer fw = new FileWriter(path);
             BufferedWriter bw = new BufferedWriter(fw);
@@ -404,20 +403,20 @@ public class Chessboard extends JComponent {
             } else {
                 bw.write("b\n");
             }
-            String FX="";
-            String FY="";
-            String SX="";
-            String SY="";
-            for(int i=0;i<frame.getGameController().getLoad().getTimeOfTurn()+1;i++){
-                FX+=frame.getGameController().getLoad().getFirstX(i);
-                FY+=frame.getGameController().getLoad().getFirstY(i);
-                SX+=frame.getGameController().getLoad().getSecondX(i);
-                SY+=frame.getGameController().getLoad().getSecondY(i);
+            String FX = "";
+            String FY = "";
+            String SX = "";
+            String SY = "";
+            for (int i = 0; i < frame.getGameController().getLoad().getTimeOfTurn() + 1; i++) {
+                FX += frame.getGameController().getLoad().getFirstX(i);
+                FY += frame.getGameController().getLoad().getFirstY(i);
+                SX += frame.getGameController().getLoad().getSecondX(i);
+                SY += frame.getGameController().getLoad().getSecondY(i);
             }
-             bw.write(FX+"\n");
-            bw.write(FY+"\n");
-            bw.write(SX+"\n");
-            bw.write(SY+"\n");
+            bw.write(FX + "\n");
+            bw.write(FY + "\n");
+            bw.write(SX + "\n");
+            bw.write(SY + "\n");
 
             bw.flush();
             bw.close();
@@ -482,70 +481,75 @@ public class Chessboard extends JComponent {
         return s;
     }
 
-    public int  read(File file) throws IOException {
-//        String path = String.format("ChessDemo/load/load%s.txt", loadTime % 8);
-        String path=file.getAbsolutePath();
-        String[] Bf=path.split("\\.");
+    public int read(File file) throws IOException {
+        String path = file.getAbsolutePath();
+        String[] Bf = path.split("\\.");
 
-        if(!Bf[Bf.length-1].equals("txt")){
+        if (!Bf[Bf.length - 1].equals("txt")) {
             return 104;
         }
         FileReader input = new FileReader(file);
-        BufferedReader bf=new BufferedReader(input);
-        String[] s=new String[8];
+        BufferedReader bf = new BufferedReader(input);
+        String[] s = new String[8];
 
-        for(int i=0;i<8;i++){
-            s[i]=bf.readLine();
+        for (int i = 0; i < 8; i++) {
+            s[i] = bf.readLine();
         }
 
-        String color=bf.readLine();
-        if (!color.equals("w")&&!color.equals("b")){
+        String color = bf.readLine();
+        if (!color.equals("w") && !color.equals("b")) {
             return 103;
         }
-        for(int i=0;i<8;i++){//check8*8
-            if (s[i].length()!=8){
+        for (int i = 0; i < 8; i++) {//check8*8
+            if (s[i].length() != 8) {
                 return 101;
             }
         }
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
-                char c=s[i].charAt(j);
-                if(c!='p'&&c!='P'&&c!='n'&&c!='N'&&c!='k'&&c!='K'&&c!='r'&&c!='R'&&c!='q'&&c!='Q'&&c!='b'&&c!='B'&&c!='_'){
+                char c = s[i].charAt(j);
+                if (c != 'p' && c != 'P' && c != 'n' && c != 'N' && c != 'k' && c != 'K' && c != 'r' && c != 'R' && c != 'q' && c != 'Q' && c != 'b' && c != 'B' && c != '_') {
                     return 102;
                 }
             }
         }//check chess
-        String FX=bf.readLine();
-        String FY=bf.readLine();
-        String SX=bf.readLine();
-        String SY=bf.readLine();
+        String FX = bf.readLine();
+        String FY = bf.readLine();
+        String SX = bf.readLine();
+        String SY = bf.readLine();
         frame.getGameController().load();
-        for(int i=0;i<FX.length();i++){
+        for (int i = 0; i < FX.length(); i++) {
             frame.getGameController().getLoad().setFirstX(Integer.parseInt(String.valueOf(FX.charAt(i))));
             frame.getGameController().getLoad().setFirstY(Integer.parseInt(String.valueOf(FY.charAt(i))));
             frame.getGameController().getLoad().setSecondX(Integer.parseInt(String.valueOf(SX.charAt(i))));
             frame.getGameController().getLoad().setSecondY(Integer.parseInt(String.valueOf(SY.charAt(i))));
         }
         frame.getGameController().getLoad().update();
-        if(color.equals("w")){
-        frame.setLoadColor(ChessColor.WHITE);}else {frame.setLoadColor((ChessColor.BLACK));}
+        if (color.equals("w")) {
+            frame.setLoadColor(ChessColor.WHITE);
+        } else {
+            frame.setLoadColor((ChessColor.BLACK));
+        }
         return 100;
 
     }
-    public void setcolor(ChessColor color){
-        currentColor=color;
+
+    public void setcolor(ChessColor color) {
+        currentColor = color;
     }
-    java.util.Timer timer ;
+
+    java.util.Timer timer;
+
     public void playback() {
         isUndo = true;
         initChessBoardToOrigin();
-        java.util.Timer timer=new Timer();
-        this.timer=timer;
-       TimerTaskTest timerTaskTest= new TimerTaskTest();
+        java.util.Timer timer = new Timer();
+        this.timer = timer;
+        TimerTaskTest timerTaskTest = new TimerTaskTest();
         this.timer.schedule(timerTaskTest, 500, 500);
-        try{
+        try {
             Thread.sleep(500);
-        }catch(Exception ex){
+        } catch (Exception ex) {
             timer.cancel();
         }
 //        for (int i = 0; i < 8; i++) {
@@ -553,20 +557,21 @@ public class Chessboard extends JComponent {
 //        }
 //        System.out.println(" ");
     }
-    public class TimerTaskTest extends java.util.TimerTask{
 
-        int time =-1;
+    public class TimerTaskTest extends java.util.TimerTask {
+
+        int time = -1;
+
         @Override
         public void run() {
-            System.out.println(time);
-            System.out.println(frame.getGameController().getLoad().getTimeOfTurn());
-            if(time==-1){
+
+            if (time == -1) {
                 initChessBoardToOrigin();
                 time++;
                 repaint();
                 return;
             }
-            if(time>frame.getGameController().getLoad().getTimeOfTurn()){
+            if (time > frame.getGameController().getLoad().getTimeOfTurn()) {
                 timer.cancel();
 
                 return;
@@ -574,7 +579,7 @@ public class Chessboard extends JComponent {
             isUndo = true;
             clickController.setFirst(chessComponents[frame.getGameController().getLoad().getFirstX(time)][frame.getGameController().getLoad().getFirstY(time)]);
             clickController.onClick(chessComponents[frame.getGameController().getLoad().getSecondX(time)][frame.getGameController().getLoad().getSecondY(time)]);
-            isUndo=false;
+            isUndo = false;
             for (int I = 0; I < 8; I++) {
                 for (int j = 0; j < 8; j++) {
                     add(chessComponents[I][j]);
@@ -585,22 +590,6 @@ public class Chessboard extends JComponent {
             return;
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //    private boolean check(String[] s,String FX,String FY,String SX,String SY){

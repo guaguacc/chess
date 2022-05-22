@@ -29,7 +29,7 @@ public class ChessGameFrame extends JFrame {
         return gameController;
     }
 
-    public ChessGameFrame(int width, int height) {
+    public ChessGameFrame(int width, int height, String PathOfBG, String pathOfChessBoardBG) {
         setTitle("2022 CS102A Project Demo"); //设置标题
         this.WIDTH = width;
         this.HEIGTH = height;
@@ -39,7 +39,8 @@ public class ChessGameFrame extends JFrame {
         setLocationRelativeTo(null); // Center the window.
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); //设置程序关闭按键，如果点击右上方的叉就游戏全部关闭了
         setLayout(null);
-
+        this.pathOfChessBoardBG = pathOfChessBoardBG;
+        this.PathOfBG = PathOfBG;
 
         addChessboard();
         addBackground();
@@ -57,7 +58,7 @@ public class ChessGameFrame extends JFrame {
             public void componentResized(ComponentEvent e) {
                 int fraWidth = getWidth();//获取面板宽度
                 int fraHeight = getHeight();
-                labelBG.setSize(fraWidth,fraHeight);
+                labelBG.setSize(fraWidth, fraHeight);
                 if (fraHeight / 76 * 100 > fraWidth) {
                     fraHeight = fraWidth / 100 * 76;
                 } else {
@@ -80,23 +81,23 @@ public class ChessGameFrame extends JFrame {
                 buttonUndo.setLocation(fraHeight, fraHeight / 10 + 3 * fraHeight / 13);
                 buttonUndo.setSize(fraWidth / 5, fraHeight / 13);
                 buttonUndo.setFont(new Font("Rockwell", Font.BOLD, fraHeight / 39));
-                buttonPlayback.setLocation(fraHeight, fraHeight / 10 + 6* fraHeight / 13);
+                buttonPlayback.setLocation(fraHeight, fraHeight / 10 + 6 * fraHeight / 13);
                 buttonPlayback.setSize(fraWidth / 5, fraHeight / 13);
                 buttonPlayback.setFont(new Font("Rockwell", Font.BOLD, fraHeight / 39));
                 buttonLoad.setLocation(fraHeight, fraHeight / 10 + 5 * fraHeight / 13);
                 buttonLoad.setSize(fraWidth / 5, fraHeight / 13);
                 buttonLoad.setFont(new Font("Rockwell", Font.BOLD, fraHeight / 39));
-                timeLabel.setLocation(fraHeight,fraHeight/15-20 );
+
+                timeLabel.setLocation(fraHeight, fraHeight / 15 - 20);
                 timeLabel.setSize(fraWidth / 18, fraHeight / 17);
                 timeLabel.setFont(new Font("Rockwell", Font.BOLD, fraHeight / 39));
-                ImageIcon picture = new ImageIcon("./images/chessboardBG.png");
-                Image img=picture.getImage();
-                img =img .getScaledInstance(fraHeight/10*8,fraHeight/10*8,Image.SCALE_DEFAULT);
-                ImageIcon newp=new ImageIcon(img);
+                ImageIcon picture = new ImageIcon(pathOfChessBoardBG);
+                Image img = picture.getImage();
+                img = img.getScaledInstance(fraHeight / 10 * 8, fraHeight / 10 * 8, Image.SCALE_DEFAULT);
+                ImageIcon newp = new ImageIcon(img);
                 labelChessBoard.setIcon(newp);
                 labelChessBoard.setLocation(fraHeight / 10, fraHeight / 10);
-                labelChessBoard.setSize(fraHeight/10*8,fraHeight/10*8);
-                System.out.println(labelChessBoard.getIcon().getIconWidth());
+                labelChessBoard.setSize(fraHeight / 10 * 8, fraHeight / 10 * 8);
                 repaint();
 
             }
@@ -154,30 +155,40 @@ public class ChessGameFrame extends JFrame {
             gameController.getChessboard().repaint();
         });
     }//reload
-    JLabel labelChessBoard;
-    private void addBackground(){
 
-        ImageIcon picture = new ImageIcon("./images/chessboardBG.png");  //load a picture from computer
+    String pathOfChessBoardBG;
+
+    JLabel labelChessBoard;
+
+    private void addBackground() {
+
+        ImageIcon picture = new ImageIcon(pathOfChessBoardBG);
+//        load a picture from computer
 //        Image image = picture.getImage();  //create an Image to change the size of the picture
 //        System.out.println(picture.getIconWidth()+","+picture.getIconHeight());
 //        ImageIcon newpicture = new ImageIcon(image.getScaledInstance(picture.getIconWidth(), picture.getIconHeight(), Image.SCALE_SMOOTH));
         JLabel label = new JLabel(picture);
-        this.labelChessBoard=label;
+        this.labelChessBoard = label;
         labelChessBoard.setLocation(HEIGTH / 10, HEIGTH / 10);
-        labelChessBoard.setSize(608,608);
-        add(labelChessBoard);}//chess board
-    JLabel labelBG;
-    private void addBG(){
+        labelChessBoard.setSize(608, 608);
+        add(labelChessBoard);
+    }//chess board
 
-        ImageIcon picture = new ImageIcon("./images/BG.png");  //load a picture from computer
+    JLabel labelBG;
+    String PathOfBG;
+
+    private void addBG() {
+
+        ImageIcon picture = new ImageIcon(PathOfBG);  //load a picture from computer
         Image image = picture.getImage();  //create an Image to change the size of the picture
-        System.out.println(picture.getIconWidth()+","+picture.getIconHeight());
         ImageIcon newpicture = new ImageIcon(image.getScaledInstance(picture.getIconWidth(), picture.getIconHeight(), Image.SCALE_SMOOTH));
         JLabel label = new JLabel(picture);
-        this.labelBG=label;
-        labelBG.setLocation(0,0);
-        labelBG.setSize(1000,760);
-        add(labelBG);}//background
+        this.labelBG = label;
+        labelBG.setLocation(0, 0);
+        labelBG.setSize(1000, 760);
+        add(labelBG);
+    }//background
+
     Boolean BGMon = false;
     JButton buttonBGM = new JButton("BGM");
 
@@ -222,6 +233,7 @@ public class ChessGameFrame extends JFrame {
             gameController.getChessboard().repaint();
         });
     }//undo
+
     JButton buttonPlayback = new JButton("Playback");
 
     private void addPlaybackButton() {
@@ -236,23 +248,16 @@ public class ChessGameFrame extends JFrame {
         });
     }
 
-
-
-
-
-
-
-
-
-
-    JButton buttonLoad=new JButton("Load");
+    JButton buttonLoad = new JButton("Load");
     ChessColor loadColor;
-    public void setLoadColor(ChessColor color){
-        loadColor=color;
+
+    public void setLoadColor(ChessColor color) {
+        loadColor = color;
     }
+
     private void addLoadButton() {
 
-        buttonLoad.setLocation(HEIGTH, HEIGTH / 10+ 5 * HEIGTH / 13);
+        buttonLoad.setLocation(HEIGTH, HEIGTH / 10 + 5 * HEIGTH / 13);
         buttonLoad.setSize(WIDTH / 5, HEIGTH / 13);
         buttonLoad.setFont(new Font("Rockwell", Font.BOLD, HEIGTH / 39));
         add(buttonLoad);
@@ -262,24 +267,28 @@ public class ChessGameFrame extends JFrame {
         buttonLoad.addActionListener(e -> {
 
             int back = 0;
+            File file=showFileOpenDialog(msgTextArea);
+            if(file==null){
+
+            }else{
             try {
-                back = gameController.getChessboard().read(showFileOpenDialog(msgTextArea));
 
-
+                back = gameController.getChessboard().read(file);
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
             if (back != 100) {
-                String code=String.format("错误编码：%d",back);
+                String code = String.format("错误编码：%d", back);
                 JOptionPane.showConfirmDialog(null, code, "提示", JOptionPane.DEFAULT_OPTION);
-            }else{
-            System.out.println(gameController.getLoad().getTimeOfTurn());
-            gameController.getLoad().addtime();
-            gameController.getChessboard().Undo();
-            gameController.getChessboard().setcolor(loadColor);
-            updateUI();
-            gameController.getLoad().minustime();
-            gameController.getChessboard().repaint();}
+            } else {
+                System.out.println(gameController.getLoad().getTimeOfTurn());
+                gameController.getLoad().addtime();
+                gameController.getChessboard().Undo();
+                gameController.getChessboard().setcolor(loadColor);
+                updateUI();
+                gameController.getLoad().minustime();
+                gameController.getChessboard().repaint();
+            }}
         });
     }//load
 
@@ -290,20 +299,18 @@ public class ChessGameFrame extends JFrame {
         // 设置文件选择的模式（只选文件、只选文件夹、文件和文件均可选）
         fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
         // 添加可用的文件过滤器（FileNameExtensionFilter 的第一个参数是描述, 后面是需要过滤的文件扩展名 可变参数）
-        fileChooser.addChoosableFileFilter(new FileNameExtensionFilter(".txt",".txt"));
+        fileChooser.addChoosableFileFilter(new FileNameExtensionFilter(".txt", ".txt"));
         // 打开文件选择框（线程将被阻塞, 直到选择框被关闭）
         int result = fileChooser.showOpenDialog(this);
         if (result == JFileChooser.APPROVE_OPTION) {
             File file = fileChooser.getSelectedFile();
             return file;
-        }else if(result==JFileChooser.CANCEL_OPTION){
+        } else if (result == JFileChooser.CANCEL_OPTION) {
             fileChooser.setVisible(false);
             return null;
         }
         return null;
     }
-
-
 
 
     JButton buttonSave = new JButton("save");
@@ -323,24 +330,25 @@ public class ChessGameFrame extends JFrame {
 //            gameController.loadGameFromFile(path);
         });
     }//save
+
     public void updateUI() {
         statusLabel.setText(gameController.getChessboard().getCurrentColor() == ChessColor.WHITE ? "White turn" : "Black turn");
         statusLabel.repaint();
         timerTaskTest.timeReset();
         chessVoice();
     }
-    public void chessVoice(){
+
+    public void chessVoice() {
         try {
-        File soundFile = new File("./resource/录制_2022_05_17_18_47_22_193_1.wav");
-        Clip clip;
-        AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
-        clip = AudioSystem.getClip();
-        clip.open(audioIn);
-        clip.start();
+            File soundFile = new File("./resource/录制_2022_05_17_18_47_22_193_1.wav");
+            Clip clip;
+            AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
+            clip = AudioSystem.getClip();
+            clip.open(audioIn);
+            clip.start();
+        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException f) {
+            f.printStackTrace();
         }
-    catch (UnsupportedAudioFileException | IOException | LineUnavailableException f) {
-        f.printStackTrace();
-    }
     }
 
     public void changeUI() {
@@ -348,51 +356,54 @@ public class ChessGameFrame extends JFrame {
         timerTaskTest.timeReset();
     }
 
-    Label timeLabel=new Label("3:00");
-    TimerTaskTest timerTaskTest=new TimerTaskTest();
-    public void addTimeLabel(){
-        timeLabel.setLocation(HEIGTH,HEIGTH/15-20 );
+    Label timeLabel = new Label("3:00");
+    TimerTaskTest timerTaskTest = new TimerTaskTest();
+
+    public void addTimeLabel() {
+        timeLabel.setLocation(HEIGTH, HEIGTH / 15 - 20);
         timeLabel.setSize(WIDTH / 18, HEIGTH / 17);
         timeLabel.setFont(new Font("Rockwell", Font.BOLD, HEIGTH / 39));
 
         add(timeLabel);
 
-     Timer timer = new Timer();
-     timer.schedule(timerTaskTest, 0, 1000);
-     try{
-         Thread.sleep(1000);
-     }catch(Exception ex){
-         timer.cancel();
-     }
- }
-
-    public class TimerTaskTest extends java.util.TimerTask{
-
-        int time =32;
-        public void timeReset(){
-            time=31;
+        Timer timer = new Timer();
+        timer.schedule(timerTaskTest, 0, 1000);
+        try {
+            Thread.sleep(1000);
+        } catch (Exception ex) {
+            timer.cancel();
         }
+    }
+
+    public class TimerTaskTest extends java.util.TimerTask {
+
+        int time = 32;
+
+        public void timeReset() {
+            time = 31;
+        }
+
         @Override
         public void run() {
             time--;
-            if (time==0){
-                time=31;
+            if (time == 0) {
+                time = 31;
                 chessboard.swapColor();
                 statusLabel.setText(gameController.getChessboard().getCurrentColor() == ChessColor.WHITE ? "White turn" : "Black turn");
                 statusLabel.repaint();
             }
             // TODO Auto-generated method stub
-            String second= String.valueOf(this.time-this.time/60*60);
+            String second = String.valueOf(this.time - this.time / 60 * 60);
             int ten;
             int one;
-            if(second.length()<2){
-                ten=0;
-                one= Integer.parseInt(String.valueOf(second.charAt(0)));
-            }else{
-                one=Integer.parseInt(String.valueOf(second.charAt(1)));
-                ten= Integer.parseInt(String.valueOf(second.charAt(0)));
+            if (second.length() < 2) {
+                ten = 0;
+                one = Integer.parseInt(String.valueOf(second.charAt(0)));
+            } else {
+                one = Integer.parseInt(String.valueOf(second.charAt(1)));
+                ten = Integer.parseInt(String.valueOf(second.charAt(0)));
             }
-            String time=String.format( "%d:%d%d",this.time/60,ten,one);
+            String time = String.format("%d:%d%d", this.time / 60, ten, one);
             timeLabel.setText(time);
             timeLabel.repaint();
         }

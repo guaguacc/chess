@@ -79,9 +79,20 @@ public class QueenChessComponent extends ChessComponent {
 
         int minus=Math.max(source.getX(),destination.getX())-Math.min(source.getX(),destination.getX());
         int minusX=destination.getX()-source.getX();
-        int dx=minusX/minus;
+        int dx,dy;
+        if(minus==0){
+            dx=0;
+        }else{
+            dx=minusX/minus;
+        }
+        minus=Math.max(source.getY(),destination.getY())-Math.min(source.getY(),destination.getY());
         int minusY=destination.getY()-source.getY();
-        int dy=minusY/minus;
+        if(minus==0){
+           dy=0;
+        }else{
+            dy=minusY/minus;
+        }
+
         if(Math.abs(minusX)!=Math.abs(minusY)&&minusX!=0&&minusY!=0){
             return false;
         }

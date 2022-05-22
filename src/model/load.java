@@ -71,9 +71,8 @@ public class load {
     public void setSecondY(int  secondY) {
         this.secondY.add(secondY);
         for (int i=0;i<firstY.size();i++){
-            System.out.printf("(%d,%d)(%d,%d)",firstX.get(i),firstY.get(i),secondX.get(i),this.secondY.get(i));
+
         }
-        System.out.println("\n");
     }
     public void update(){
         timeOfTurn=firstX.size()-1;
