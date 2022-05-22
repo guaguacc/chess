@@ -9,58 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547a871-93ae-41da-98f2-bd3c7761d591" name="变更" comment="1">
-      <change afterPath="$PROJECT_DIR$/resource/model/bishop-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/model/bishop-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/model/king-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/model/king-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/model/knight-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/model/knight-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/model/pawn-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/model/pawn-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/model/queen-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/model/queen-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/model/rook-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/model/rook-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/view/BG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/view/chessBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/view/chessboardBG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/view/ink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/view/inkChessboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/view/seaB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/view/seaBoard.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChessDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChessDemo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/Enter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/Enter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/Enter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/Enter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/BishopChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/BishopChessComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/KingChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/KingChessComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/KnightChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/KnightChessComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/QueenChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/QueenChessComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/RookChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/RookChessComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/blackPawnChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/blackPawnChessComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/model/whitePawnChessComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/model/whitePawnChessComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame$TimerTaskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame$TimerTaskTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/ChessGameFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/Chessboard$TimerTaskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/Chessboard$TimerTaskTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessDemo/view/Chessboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessDemo/view/Chessboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/resource/view/1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/girigiri.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/resource/view/girigiri.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/girigiri.wav" beforeDir="false" afterPath="$PROJECT_DIR$/resource/view/girigiri.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/录制_2022_05_17_18_47_22_193_1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/resource/view/cv1.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/录制_2022_05_17_18_47_22_193_1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/resource/view/cv1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/BishopChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/BishopChessComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/KingChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/KingChessComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/KnightChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/KnightChessComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/QueenChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/QueenChessComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/RookChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/RookChessComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/blackPawnChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/blackPawnChessComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/whitePawnChessComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/whitePawnChessComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ChessGameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ChessGameFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Chessboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Chessboard.java" afterDir="false" />
-    </list>
+    <list default="true" id="3547a871-93ae-41da-98f2-bd3c7761d591" name="变更" comment="1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +57,7 @@
     <property name="project.structure.last.edited" value="工件" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -134,11 +83,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="应用程序.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -170,7 +114,42 @@
       <option name="project" value="LOCAL" />
       <updated>1653220396454</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1">
+      <created>1653222637952</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653222637952</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1">
+      <created>1653222722238</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653222722238</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1">
+      <created>1653222865625</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653222865625</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1">
+      <created>1653222881953</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653222881953</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1">
+      <created>1653222915826</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1653222915826</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
